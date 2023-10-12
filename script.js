@@ -1,11 +1,10 @@
 //your code here
 
-// Your array of band names
 let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 
 // Function to remove articles from a string
 function removeArticles(str) {
-  return str.replace(/^(a|an|the)\s+/i, '');
+  return str.replace(/^(a |an |the )/i, ''); // This regex removes articles at the beginning of the string
 }
 
 // Sort the touristSpots array in place without articles
