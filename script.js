@@ -3,6 +3,15 @@
 let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 
 // Function to remove articles from a string
+onst articles = ['a', 'an', 'the'];
+    const nameWords = name.split(' ');
+
+    // Remove articles if they are at the beginning of the band name
+    while (articles.includes(nameWords[0].toLowerCase())) {
+        nameWords.shift();
+    }
+
+    return nameWords.join(' ');
 function removeArticles(str) {
   return str.replace(/^(a |an |the )/i, ''); // This regex removes articles at the beginning of the string
 }
